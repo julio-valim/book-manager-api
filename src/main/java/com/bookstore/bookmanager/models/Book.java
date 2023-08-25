@@ -13,8 +13,8 @@ import javax.validation.constraints.Size;
 
 
 @Entity
-@Table(name = BookModel.TABLE_NAME)
-public class BookModel {
+@Table(name = Book.TABLE_NAME)
+public class Book {
   public static final String TABLE_NAME = "books";
 
   @Id
@@ -32,9 +32,9 @@ public class BookModel {
   private Double price;
 
 
-  public BookModel() {}
+  public Book() {}
 
-  public BookModel(Long book_id, String title, Double price) {
+  public Book(Long book_id, String title, Double price) {
     this.book_id = book_id;
     this.title = title;
     this.price = price;
